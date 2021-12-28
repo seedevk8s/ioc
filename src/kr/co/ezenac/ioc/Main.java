@@ -17,7 +17,8 @@ public class Main {
         System.out.println(urlResult);
 
 */
-        Encoder encoder = new Encoder();
+        //Encoder encoder = new Encoder(new Base64Encoder());
+        Encoder encoder = new Encoder(new UrlEncoder());
         String result = encoder.encode(url);
 
         System.out.println(result);
