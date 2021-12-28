@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         String url = "www.google.com/books/it?page=10&size=20&name=springframework";
+/*
 
         // Base 64 encoding
         IEncoder encoder = new Base64Encoder();
@@ -14,5 +15,11 @@ public class Main {
         IEncoder urlEncoder = new UrlEncoder();
         String urlResult = urlEncoder.encode(url);
         System.out.println(urlResult);
+
+*/
+        Encoder encoder = new Encoder();
+        String result = encoder.encode(url);
+
+        System.out.println(result);
     }
 }
